@@ -8,10 +8,10 @@
         <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.api</groupId>
-    <artifactId>api</artifactId>
+    <groupId>com.bree</groupId>
+    <artifactId>spring</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>api</name>
+    <name>spring</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
