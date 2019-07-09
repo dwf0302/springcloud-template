@@ -1,4 +1,4 @@
-package com.bree.consumer;
+package com.bree.api;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,10 +7,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ConsumerApplicationTests {
-
+public class ServiceApiApplicationTests {
     @Test
     public void contextLoads() {
+
     }
 
 }

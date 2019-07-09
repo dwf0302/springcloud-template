@@ -1,5 +1,7 @@
-package com.bree.serviceapi;
+package com.bree.api;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,8 +24,11 @@ public class ServiceApiApplication {
 
     @RequestMapping("/hi")
     public String home(@RequestParam String name) {
+        Logger logger = LoggerFactory.getLogger(getClass());
+        logger.warn("1");
         System.out.println("测试");
         return "hi " + name + ",i am from port:" + port;
+
     }
 
 }

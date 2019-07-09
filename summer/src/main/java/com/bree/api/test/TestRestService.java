@@ -1,4 +1,4 @@
-package com.bree.consumer.test;
+package com.bree.api.test;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
