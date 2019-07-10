@@ -1,4 +1,4 @@
-package com.bree.common.config;
+package com.bree.common.config.websocket;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
