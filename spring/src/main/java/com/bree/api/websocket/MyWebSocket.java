@@ -42,7 +42,6 @@ public class MyWebSocket {
         this.session = session;
         this.nickname = nickname;
         map.put(session.getId(), session);
-
         webSocketSet.add(this);     //加入set中
         System.out.println("有新连接加入:" + nickname + ",当前在线人数为" + webSocketSet.size());
         this.session.getAsyncRemote().sendText("恭喜" + nickname + "成功连接上WebSocket(其频道号：" + session.getId() + ")-->当前在线人数为：" + webSocketSet.size());
@@ -110,6 +109,14 @@ public class MyWebSocket {
 //        broadcast(nickname+": "+message);
     }
 
+    public static void sendMessage(String number ,String message){
+        for (String key : map.keySet()) {
+            if(key.equals(number)){
+                Session session = map.get(key);
+                session.getAsyncRemote().sendText(message);
+            }
+        }
+    }
     /**
      * 发生错误时调用
      */
